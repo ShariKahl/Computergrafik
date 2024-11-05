@@ -29,7 +29,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="geometry added" />
+    <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="geometry added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +106,7 @@
       <workItem from="1730441429616" duration="622000" />
       <workItem from="1730808125456" duration="3059000" />
       <workItem from="1730811443192" duration="2740000" />
-      <workItem from="1730814251598" duration="3467000" />
+      <workItem from="1730814251598" duration="4141000" />
     </task>
     <task id="LOCAL-00001" summary="01_math done">
       <option name="closed" value="true" />
@@ -138,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730818859154</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="geometry added">
+      <option name="closed" value="true" />
+      <created>1730818869033</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730818869033</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +168,17 @@
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
                   <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </State>
