@@ -7,7 +7,6 @@
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -19,9 +18,7 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated>
-      <config projectName="math" targetName="math_test" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -29,8 +26,30 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="geometry added">
+    <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="added source code from math">
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/.idea/geometry.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Computergrafik.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/geometry/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/geometry/geometry.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/geometry/geometry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/geometry/geometry.tcc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/geometry/geometry_test.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/math/.cmake/api/v1/reply/cmakeFiles-v1-5ad5fd40fa3ac9178645.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/math/.cmake/api/v1/reply/index-2024-11-01T06-11-15-0030.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/math/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe1/math/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/math/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe1/math/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe1/math/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe1/math/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +69,31 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ShariKahl&quot;
+  }
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="04694fa9-4b5e-457d-9807-606d55cf094d" />
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ShariKahl/Computergrafik.git&quot;,
+    &quot;accountId&quot;: &quot;04694fa9-4b5e-457d-9807-606d55cf094d&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/aufgabe1/math/math.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/aufgabe1/math/math_test.cc" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///home/kash1012/Documents/Computergrafik/aufgabe1/math/math_test.cc" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="3" />
+    <option name="productBranch" value="Classic" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -67,37 +104,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/kash1012/Documents/Computergrafik",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CMake Debug.geometry.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kash1012/Documents/Computergrafik/aufgabe1/geometry&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/aufgabe1/geometry" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="math_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="math" TARGET_NAME="math_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="math" RUN_TARGET_NAME="math_test" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="geometry" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -115,7 +161,9 @@
       <workItem from="1730441429616" duration="622000" />
       <workItem from="1730808125456" duration="3059000" />
       <workItem from="1730811443192" duration="2740000" />
-      <workItem from="1730814251598" duration="5859000" />
+      <workItem from="1730814251598" duration="8839000" />
+      <workItem from="1730824412010" duration="2402000" />
+      <workItem from="1730828827989" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="01_math done">
       <option name="closed" value="true" />
@@ -157,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730818869033</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added source code from math">
+      <option name="closed" value="true" />
+      <created>1730821543079</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730821543079</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +288,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01_math done" />
     <MESSAGE value="geometry added" />
-    <option name="LAST_COMMIT_MESSAGE" value="geometry added" />
+    <MESSAGE value="added source code from math" />
+    <option name="LAST_COMMIT_MESSAGE" value="added source code from math" />
   </component>
 </project>
