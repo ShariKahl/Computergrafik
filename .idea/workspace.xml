@@ -29,7 +29,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="01_math done" />
+    <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="geometry added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +45,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/aufgabe1/math/math.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/aufgabe1/math/math_test.cc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/kash1012/Documents/Computergrafik/aufgabe1/math/math_test.cc" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -73,6 +74,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -98,7 +104,7 @@
       <workItem from="1730441429616" duration="622000" />
       <workItem from="1730808125456" duration="3059000" />
       <workItem from="1730811443192" duration="2740000" />
-      <workItem from="1730814251598" duration="2685000" />
+      <workItem from="1730814251598" duration="3467000" />
     </task>
     <task id="LOCAL-00001" summary="01_math done">
       <option name="closed" value="true" />
@@ -108,7 +114,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730817990180</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="01_math done">
+      <option name="closed" value="true" />
+      <created>1730818093704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730818093704</updated>
+    </task>
+    <task id="LOCAL-00003" summary="geometry added">
+      <option name="closed" value="true" />
+      <created>1730818258584</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730818258584</updated>
+    </task>
+    <task id="LOCAL-00004" summary="geometry added">
+      <option name="closed" value="true" />
+      <created>1730818859154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730818859154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +154,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -132,6 +168,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01_math done" />
-    <option name="LAST_COMMIT_MESSAGE" value="01_math done" />
+    <MESSAGE value="geometry added" />
+    <option name="LAST_COMMIT_MESSAGE" value="geometry added" />
   </component>
 </project>
