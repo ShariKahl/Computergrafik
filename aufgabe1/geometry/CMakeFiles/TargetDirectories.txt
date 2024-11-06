@@ -1,0 +1,4 @@
+/home/kash1012/Documents/Computergrafik/aufgabe1/geometry/CMakeFiles/math_test.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/geometry/CMakeFiles/geometry_test.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/geometry/CMakeFiles/edit_cache.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/geometry/CMakeFiles/rebuild_cache.dir

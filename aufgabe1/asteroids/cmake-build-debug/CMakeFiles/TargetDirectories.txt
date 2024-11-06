@@ -1,0 +1,8 @@
+/home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug/CMakeFiles/main_game.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug/CMakeFiles/math_test.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug/CMakeFiles/geometry_test.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug/CMakeFiles/physics_test.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug/CMakeFiles/game_test.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug/CMakeFiles/test.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug/CMakeFiles/rebuild_cache.dir

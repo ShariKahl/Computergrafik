@@ -1,0 +1,5 @@
+# ninja log v6
+39	1659	1730828302138009747	CMakeFiles/geometry_test.dir/math.cc.o	3f0bee1c1a958129
+35	2788	1730828302134009747	CMakeFiles/geometry_test.dir/geometry.cc.o	81f3785485eb9d64
+21	4314	1730828302122009747	CMakeFiles/geometry_test.dir/geometry_test.cc.o	9f50bfa9ed5bd98
+4314	4544	1730828306413009749	geometry_test	c76afb9b3b974ef8
