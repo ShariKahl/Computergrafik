@@ -4,12 +4,11 @@
 
 
 void SDL2Renderer::renderSpaceship(Vector2df position, float angle) {
-    static std::array<SDL_Point, 6> ship_points{SDL_Point{-6, 3},
-                                              SDL_Point{-6,-3},
-                                              SDL_Point{-10,-6},
-                                              SDL_Point{ 14, 0},
-                                              SDL_Point{-10, 6},
-                                              SDL_Point{-6, 3}};
+    static std::array<SDL_Point, 5> ship_points{SDL_Point{-10, -10},
+                                              SDL_Point{10,-10},
+                                              SDL_Point{10,10},
+                                              SDL_Point{ -10, 10},
+                                              SDL_Point{-10, -10}};
   
   std::array<SDL_Point, ship_points.size()> points;
 
@@ -204,7 +203,7 @@ void SDL2Renderer::renderScore() {
       points[i].y = y +  4 * (digits[d] + i)->y;
     }
     x -= 20;
-//    SDL_SetRenderDrawColor( renderer, 0xFF, 0xFF, 0x00, 0xFF );
+//    SDL_SetRenderDrawColor( renderer, 0xDE, 0xDE, 0xDE, 0xFF );
     SDL_RenderDrawLines(renderer, points.data(), size );
 //    SDL_SetRenderDrawColor( renderer, 0xFF, 0xFF, 0xFF, 0xFF );
     no_of_digits--;
@@ -232,7 +231,7 @@ bool SDL2Renderer::init() {
 
 
 void SDL2Renderer::render() {
-  SDL_SetRenderDrawColor( renderer, 0x00, 0x00, 0x00, 0xFF );
+  SDL_SetRenderDrawColor( renderer, 0xAB, 0xAB, 0xAB, 0xFF );
   SDL_RenderClear( renderer );
   SDL_SetRenderDrawColor( renderer, 0xFF, 0xFF, 0xFF, 0xFF );
   
