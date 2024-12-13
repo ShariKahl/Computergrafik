@@ -1,4 +1,0 @@
-/snap/clion/300/bin/cmake/linux/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/kash1012/Documents/Computergrafik/aufgabe1/math -B /home/kash1012/Documents/Computergrafik/aufgabe1/math
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: /home/kash1012/Documents/Computergrafik/aufgabe1/math

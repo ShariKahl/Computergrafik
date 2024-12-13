@@ -1,4 +1,0 @@
-/snap/clion/300/bin/cmake/linux/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/300/bin/ninja/linux/aarch64/ninja -G Ninja -S /home/kash1012/Documents/Computergrafik/aufgabe1/asteroids -B /home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug
--- Configuring done (0.2s)
--- Generating done (0.1s)
--- Build files have been written to: /home/kash1012/Documents/Computergrafik/aufgabe1/asteroids/cmake-build-debug
