@@ -1,0 +1,8 @@
+/home/shari/CLionProjects/Computergrafik/aufgabe1/asteroids/CMakeFiles/main_game.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/asteroids/CMakeFiles/math_test.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/asteroids/CMakeFiles/geometry_test.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/asteroids/CMakeFiles/physics_test.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/asteroids/CMakeFiles/game_test.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/asteroids/CMakeFiles/test.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/asteroids/CMakeFiles/edit_cache.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/asteroids/CMakeFiles/rebuild_cache.dir

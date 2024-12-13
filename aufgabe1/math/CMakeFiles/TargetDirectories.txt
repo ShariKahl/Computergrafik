@@ -1,0 +1,3 @@
+/home/shari/CLionProjects/Computergrafik/aufgabe1/math/CMakeFiles/math_test.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/math/CMakeFiles/edit_cache.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe1/math/CMakeFiles/rebuild_cache.dir
