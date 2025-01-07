@@ -1,5 +1,13 @@
 #include <cassert>
 
+// Aufgabe_3 - Default-Konstruktor
+template <class FLOAT_TYPE, size_t N>
+Vector<FLOAT_TYPE, N>::Vector() {
+    for (size_t i = 0; i < N; ++i) {
+        vector[i] = 0;
+    }
+}
+
 template <class FLOAT_TYPE, size_t N>
 Vector<FLOAT_TYPE, N>::Vector( std::initializer_list<FLOAT_TYPE> values ) {
   auto iterator = values.begin();
