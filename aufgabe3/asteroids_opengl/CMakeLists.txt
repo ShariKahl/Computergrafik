@@ -6,10 +6,19 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_compile_options(-g -Wall -Wextra -Wpedantic -Wl,--stack,16777216)
 
+include(FetchContent)
+
+# Google Test hinzufügen
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+)
+FetchContent_MakeAvailable(googletest)
+
 add_executable(main_game game.cc math.cc matrix.cc geometry.cc sdl2_renderer.cc opengl_renderer.cc sound.cc main_game.cc physics.cc sdl2_game_controller.cc timer.cc)
 
-# target_link_libraries(main_game SDL2 SDL2_mixer OPENGL32 GLEW32) # MinGW
-target_link_libraries(main_game SDL2 SDL2_mixer GL GLEW) # Linux
+target_link_libraries(main_game SDL2 SDL2_mixer OPENGL32 GLEW32) # MinGW
+# target_link_libraries(main_game SDL2 SDL2_mixer GL GLEW) # Linux
 
 enable_testing()
 add_executable(math_test math_test.cc math.cc)
@@ -23,3 +32,5 @@ target_link_libraries(physics_test gtest gtest_main SDL2)
 add_executable(game_test game_test.cc game.cc physics.cc geometry.cc math.cc timer.cc)
 target_link_libraries(game_test gtest gtest_main SDL2)
 
+# cmake -G "MinGW Makefiles" -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -S .
+# mingw32-make
