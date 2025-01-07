@@ -1,0 +1,9 @@
+{
+    "cmake.sourceDirectory": "C:/dev/Computergrafik/raytracer",
+    "files.associations": {
+        "*.py": "python",
+        "*.tcc": "cpp",
+        "iosfwd": "cpp",
+        "algorithm": "cpp"
+    }
+}

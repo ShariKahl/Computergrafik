@@ -1,0 +1,8 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "raytracer\\out\\build\\x64-Debug",
+      "raytracer\\out\\install\\x64-Debug"
+    ]
+  }
+}
