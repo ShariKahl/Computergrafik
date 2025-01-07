@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.9)
+cmake_minimum_required (VERSION 3.10)
 project (matrix)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -6,6 +6,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_compile_options(-g -Wall -Wextra -Wpedantic -Wl,--stack,16777216)
 
+include(FetchContent)
+
+# Google Test hinzufügen
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+)
+FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 add_executable(math_test math_test.cc math.cc)
