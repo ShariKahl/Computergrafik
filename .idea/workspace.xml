@@ -7,7 +7,6 @@
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -27,10 +26,335 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="added source code from math">
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+    <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="raytracer done">
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/3.28.3/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/game.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/game.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/game_test.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/game_test.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/geometry.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/geometry.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/math.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/math.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/physics.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/physics.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/timer.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/game_test.dir/timer.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/geometry.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/geometry.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/geometry_test.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/geometry_test.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/math.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/math.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/geometry_test.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/game.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/game.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/geometry.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/geometry.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/main_game.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/main_game.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/math.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/math.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/matrix.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/matrix.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/opengl_renderer.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/opengl_renderer.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/physics.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/physics.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/sdl2_game_controller.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/sdl2_game_controller.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/sdl2_renderer.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/sdl2_renderer.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/sound.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/sound.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/timer.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/main_game.dir/timer.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/math.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/math.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/math_test.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/math_test.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/math_test.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/math.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/math.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/matrix.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/matrix.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/matrix_test.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/matrix_test.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/matrix_test.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/geometry.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/geometry.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/math.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/math.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/physics.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/physics.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/physics_test.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/physics_test.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/timer.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/physics_test.dir/timer.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/CTestTestfile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/debug.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/game.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/game.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/game_controller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/game_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/game_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/geometry.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/geometry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/geometry.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/geometry_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/geometry_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/main_game" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/main_game.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/math.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/math.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/math.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/math_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/math_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/matrix.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/matrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/matrix.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/matrix_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/matrix_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/opengl_renderer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/opengl_renderer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/physics.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/physics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/physics.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/physics_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/physics_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/renderer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sdl2_game_controller.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sdl2_game_controller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sdl2_renderer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sdl2_renderer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/bangLarge.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/bangMedium.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/bangSmall.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/beat1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/beat2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/extraShip.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/saucerBig.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/saucerSmall.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/sound/thrust.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/timer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/asteroids_opengl/timer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/aufgabe/05_matrix.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/aufgabe/06_asteroids.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/aufgabe/07_asteroids_3d.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/3.28.3/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/compiler_depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/math.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/math.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/math_test.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/math_test.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/math_test.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/compiler_depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/math.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/math.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/matrix.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/matrix.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/matrix_test.cc.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/matrix_test.cc.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/matrix_test.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/CTestTestfile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/math.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/math.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/math.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/math_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/math_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/matrix.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/matrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/matrix.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/matrix_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/matrix/matrix_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/basic.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/cube_blender.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/debug.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/icosphere.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/teapot.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/untitled.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/viewer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/wavefront.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/wavefront.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe1/geometry/aufgabe3/viewer/wavefront_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/debug.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/game.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/game.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/game_controller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/game_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/geometry.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/geometry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/geometry.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/geometry_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/main_game.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/math.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/math.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/math.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/math_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/matrix.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/matrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/matrix.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/matrix_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/opengl_renderer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/opengl_renderer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/physics.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/physics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/physics.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/physics_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/renderer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sdl2_game_controller.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sdl2_game_controller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sdl2_renderer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sdl2_renderer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/bangLarge.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/bangMedium.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/bangSmall.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/beat1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/beat2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/extraShip.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/saucerBig.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/saucerSmall.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/sound/thrust.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/timer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/asteroids_opengl/timer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/aufgabe/05_matrix.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/aufgabe/06_asteroids.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/aufgabe/07_asteroids_3d.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/math.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/math.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/math.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/math_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/matrix.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/matrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/matrix.tcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/matrix/matrix_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/basic.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/cube_blender.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/debug.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/icosphere.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/teapot.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/untitled.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/viewer.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/wavefront.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/wavefront.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe3/viewer/wavefront_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Computergrafik.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aufgabe2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe2/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aufgabe2/raytracer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe2/raytracer.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,8 +444,13 @@
     <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/aufgabe1/math/math.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/aufgabe1/math/math_test.cc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/aufgabe2/raytracer.cc" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -140,6 +469,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;C/C++ File.raytracer.cc.executor&quot;: &quot;Run&quot;,
     &quot;CMake Debug.geometry.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -147,10 +477,11 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/shari/CLionProjects/Computergrafik/aufgabe2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/shari/CLionProjects/Computergrafik/aufgabe1/geometry&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -167,9 +498,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/aufgabe2" />
       <recent name="$PROJECT_DIR$/aufgabe1/geometry" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/aufgabe2" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="raytracer.cc" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Computergrafik" TARGET_NAME="raytracer.cc" CONFIG_NAME="raytracer.cc">
+      <option name="sourceFile" value="$PROJECT_DIR$/aufgabe2/raytracer.cc" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -191,7 +531,14 @@
       <workItem from="1730828827989" duration="77000" />
       <workItem from="1734088168435" duration="1825000" />
       <workItem from="1734218118406" duration="1200000" />
-      <workItem from="1734219345179" duration="7870000" />
+      <workItem from="1734219345179" duration="8598000" />
+      <workItem from="1734299062374" duration="1573000" />
+      <workItem from="1734390317770" duration="4648000" />
+      <workItem from="1736355248227" duration="1579000" />
+      <workItem from="1736358628047" duration="1370000" />
+      <workItem from="1736371739794" duration="1394000" />
+      <workItem from="1736373176244" duration="846000" />
+      <workItem from="1736374238699" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="01_math done">
       <option name="closed" value="true" />
@@ -241,7 +588,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730821543079</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="raytracer done">
+      <option name="closed" value="true" />
+      <created>1734227503827</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734227503827</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +671,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01_math done" />
     <MESSAGE value="geometry added" />
+    <MESSAGE value="added source code to aufgabe2" />
     <MESSAGE value="added source code from math" />
-    <option name="LAST_COMMIT_MESSAGE" value="added source code from math" />
+    <MESSAGE value="raytracer done" />
+    <option name="LAST_COMMIT_MESSAGE" value="raytracer done" />
   </component>
 </project>

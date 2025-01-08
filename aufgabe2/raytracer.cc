@@ -1,262 +1,202 @@
-#include "math.h"
-#include "geometry.h"
+#include "math.h"       // Enthält mathematische Hilfsfunktionen
+#include "geometry.h"   // Definiert geometrische Objekte wie Vektoren und Kugeln
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <fstream>
 
-// Konstanten für die grundlegenden Parameter
-const float KantenLaenge = 100.0;
-const float TiefeMittelpunkt = 1.0;
-const float RadiusGroßeKugel = 100.0;
-const float Helligkeit = 100.0;
-const float Epsilon = 0.01;
+// Konstante Parameter für die Szene
+const float KANTENLAENGE = 10.0f;
+const float TIEFE_MITTELPUNKT = 10.0f;  // / Licht näher an der Kamera
+const float RADIUS_RIESENKUGELN = 1000.0f;
+const float GRUNDHELLIGKEIT = 0.26f;
+const float EPSILON = 0.001f;
 
-// Screen-Klasse - Bildschirm, auf dem das gerenderte Bild ausgegeben wird
+// Hilfsfunktion zur Skalierung eines Vektors
+Vector3df scale_vector(const Vector3df& v, float scalar) {
+    return Vector3df({v[0] * scalar, v[1] * scalar, v[2] * scalar});
+}
+
+// Hilfsfunktion für Kreuzprodukt
+Vector3df cross_product(const Vector3df& a, const Vector3df& b) {
+    return Vector3df({
+        a[1] * b[2] - a[2] * b[1],
+        a[2] * b[0] - a[0] * b[2],
+        a[0] * b[1] - a[1] * b[0]
+    });
+}
+
+// Bildschirmklasse zur Verwaltung von Pixeln und zur Ausgabe des Bildes
 class Screen {
-  public:
-    int width;
-    int height;
-    std::vector<Vector3df> pixels; // Vektor, der alle Pixel des Bildes als RGB-Werte speichert
-    Screen(int width, int height) : width(width), height(height), pixels(width * height, Vector3df{0.0, 0.0, 0.0}) {}
+public:
+    int nx, ny;
+    std::vector<Vector3df> pixels;
 
-    // setzt den Wert eines bestimmten Pixels
-    void set_pixel(int x, int y, Vector3df color) {
-      pixels[y * width + x] = color;
+    Screen(int nx, int ny) : nx(nx), ny(ny), pixels(nx * ny, Vector3df{0.0f, 0.0f, 0.0f}) {}
+
+    void set_pixel(int x, int y, const Vector3df& color) {
+        pixels[y * nx + x] = color;
     }
 
-    // Bild im PPM-Format in Datei speichern
     void write_ppm() {
-      std::ofstream file("OutputRenderedImage.ppm");
-
-      file << "P3\n" << width << " " << height << "\n" << 255 << "\n";
-      for (int y = height -1; y > 0; --y) {
-        for (int x = 0; x < width; ++x) {
-          const Vector3df color = pixels[y * width + x];
-          file << static_cast<int>(color[0] * 255) << " "
-                 << static_cast<int>(color[1] * 255) << " "
-                 << static_cast<int>(color[2] * 255) << " ";
+        std::ofstream file("RenderedImage.ppm");
+        file << "P3\n" << nx << " " << ny << "\n255\n";
+        for (int y = ny - 1; y >= 0; --y) {
+            for (int x = 0; x < nx; ++x) {
+                const Vector3df& color = pixels[y * nx + x];
+                file << static_cast<int>(color[0] * 255) << " "
+                     << static_cast<int>(color[1] * 255) << " "
+                     << static_cast<int>(color[2] * 255) << " ";
+            }
+            file << "\n";
         }
-        file << "\n";
-      }
-      file.close();
     }
 };
 
-// Eine "Kamera", die von einem Augenpunkt aus in eine Richtung senkrecht auf ein Rechteck (das Bild) zeigt.
+// Kamera zur Generierung von Sehstrahlen
 class Camera {
-  public:
+public:
     Screen screen;
-    Vector3df eye; // Position des Augenpunkts
-    Vector3df direction; // Blickrichtung
-    Vector3df up; // Orientierung der Kamera - "Oben"-Richtung
-    Vector3df cam_view; // Blickrichtung der Kamera
-    Vector3df horizontal; // Horizontale Basisvektoren der Kamera, die durch die "up"-Richtung und die Blickrichtung bestimmt werden
-    Vector3df vertical; // vertikale Basisvektoren der Kamera
-    float cam_width; // Breite des Bildes
-    float cam_height; //
-    float distance; // Abstand zum Bild
-    float l; // links
-    float r; // rechts
-    float t; // oben
-    float b; // unten
+    Vector3df eye;
+    Vector3df direction;
+    Vector3df up;
+    Vector3df w;
+    Vector3df u;
+    Vector3df v;
+    float width;
+    float height;
+    float distance;
+    float l;
+    float r;
+    float t;
+    float b;
 
-  Camera(Screen screen, Vector3df eye, Vector3df direction, Vector3df up, float width, float height, float distance, Vector3df u, Vector3df v, Vector3df w)
-    : screen(screen), eye(eye), direction(direction), up(up), cam_view(w), horizontal(u), vertical(v), cam_width(width), cam_height(height), distance(distance) {
-    this->l = -cam_width / 2.0;
-    this->r = cam_width / 2.0;
-    this->t = cam_height / 2.0;
-    this->b = -cam_height / 2.0;
-  }
+    Camera(Screen screen, Vector3df eye, Vector3df direction, Vector3df up, float width, float height, float distance)
+    : screen(screen),
+      eye(eye),
+      direction(direction),
+      up(up),
+      w(direction),        // Initialisiere w mit direction
+      u(Vector3df{0.0f, 0.0f, 0.0f}),
+      v(Vector3df{0.0f, 0.0f, 0.0f}),
+      width(width),
+      height(height),
+      distance(distance)
+    {
+        // Bildgrenzen berechnen
+        l = -width / 2;
+        r = width / 2;
+        t = height / 2;
+        b = -height / 2;
 
+        // Kamera-Koordinatensystem berechnen
+        w.normalize();
+        u = cross_product(up, w);
+        u.normalize();
+        v = cross_product(w, u);
+    }
 
-    // erzeugt für jedes Pixel einen Strahl
-    Ray<float, 3u> generate_ray(int x, int y) {
-      float p_u = l + (r - l) * (x + 0.5) / screen.width; // x-Koordinate des Pixels in Bildschirmkoordinaten
-      float p_v = b + (t - b) * (y + 0.5) / screen.height; // y-Koordinate des Pixels in Bildschirmkoordinaten
+    Ray<float, 3> generate_ray(int x, int y) {
+        float p_u = l + (r - l) * (x + 0.5f) / screen.nx;
+        float p_v = b + (t - b) * (y + 0.5f) / screen.ny;
 
-      Vector3df ray_direction = (Vector3df{0, 0, 0} - (distance * cam_view)) + p_u * horizontal + p_v * vertical; // Blickrichtung des Strahls
-      ray_direction.normalize(); // Richtung normalisieren
-      return Ray<float, 3u>{eye, ray_direction}; // Strahl erzeugen
+        Vector3df ray_direction = scale_vector(w, -distance)
+                                + scale_vector(u, p_u)
+                                + scale_vector(v, p_v);
+        ray_direction.normalize();
+
+        return Ray<float, 3>(eye, ray_direction);
     }
 };
 
-// Das "Material" der Objektoberfläche mit ambienten, diffusem und reflektiven Farbanteil.
+// Materialklasse beschreibt Eigenschaften der Oberfläche
 class Material {
-  public:
-    Vector3df color; // Farbe
-    float shininess; // Glanz der Oberfläche
-    float reflectivity; // Reflektionsfaktor des Materials
-    float refraction_index; // Indizwert der Brechung des Materials (Transparenz und Lichtbrechung)
+public:
+    Vector3df color;
+    float shininess;
+    float reflectivity;
+
+    Material(Vector3df color, float shininess, float reflectivity)
+        : color(color), shininess(shininess), reflectivity(reflectivity) {}
 };
 
+// Wrapper-Klasse für Objekte in der Szene
+class WorldObject {
+public:
+    Sphere3df sphere;
+    Material material;
 
-// Ein "Objekt", z.B. eine Kugel oder ein Dreieck, und dem zugehörigen Material der Oberfläche.
-// Im Prinzip ein Wrapper-Objekt, das mindestens Material und geometrisches Objekt zusammenfasst.
-class Object {
-  public:
-    Sphere3df sphere; // Objekt aus geometry.h, das Kugel darstellt
-    Material material; // Aussehen der Oberfläche des Objekts
-    Object(Sphere3df sphere, Material material) : sphere(sphere), material(material) {}
+    WorldObject(Sphere3df sphere, Material material) : sphere(sphere), material(material) {}
 };
 
-// verschiedene Materialdefinition, z.B. Mattes Schwarz, Mattes Rot, Reflektierendes Weiss, ...
-// im wesentlichen Variablen, die mit Konstruktoraufrufen initialisiert werden.
-
-// gesammte zu rendernde "Szene"
+// Szene-Klasse enthält Objekte und Lichtquellen
 class Scene {
-  public:
-    Vector3df light; // Position der Lichtquelle
-    std::vector<Object> objects; // Liste der Objekte in der Szene
+public:
+    Vector3df light;
+    std::vector<WorldObject> objects;
     Intersection_Context<float, 3> hitContext;
 
-    Scene(Vector3df light) : light(light), objects() {}
+    Scene(Vector3df light) : light(light) {}
 
-    void add_object(Object object) {
-      objects.push_back(object);
+    void add_object(WorldObject object) {
+        objects.push_back(object);
     }
 
-  // berechnet die Beleuchtung eines Punktes
-    float lambertian_shading(Vector3df light, Vector3df normal, float diffuse_coefficient) {
-      Vector3df n = normal; // normal vector
-      n.normalize();
-      Vector3df l = light; // light vector
-      l.normalize();
+    WorldObject* findNearestObject(const Ray<float, 3>& ray) {
+        WorldObject* nearestObject = nullptr;
+        float minimal_t = INFINITY;
 
-      float brightness = diffuse_coefficient * std::max(0.0f, n * l); // diffuse shading
-      return brightness;
-    }
-
-    // sucht das nächstgelegenste Objekt, das ein Schnittpunkt mit dem Strahl hat
-    Object* findClosestObject(Ray3df ray) {
-      Object *closest_object = nullptr;
-      float minimal_t = INFINITY; // minimale Schnittpunktzahl
-      for (Object &object : objects) {
-        bool found = object.sphere.intersects(ray, hitContext);
-        if (found && hitContext.t > Epsilon && hitContext.t < minimal_t - Epsilon) {
-          closest_object = &object;
-          minimal_t = hitContext.t; // neue minimale Schnittpunktzahl
+        for (auto& o : objects) {
+            Intersection_Context<float, 3> context;
+            if (o.sphere.intersects(ray, context) && context.t > EPSILON && context.t < minimal_t) {
+                hitContext = context;
+                nearestObject = &o;
+                minimal_t = context.t;
+            }
         }
-      }
-      return closest_object;
-    }
-
-    // prüft, ob ein Objekt von Lichtquellen beleuchtet wird oder ob es im Schatten liegt
-    bool findLightSources() {
-      Ray3df shadow_ray(hitContext.intersection, light - hitContext.intersection);
-      findClosestObject(shadow_ray);
-      if (hitContext.t > Epsilon && hitContext.t < 1- Epsilon) {
-        return false;
-      } else {
-        return true;
-      }
+        return nearestObject;
     }
 };
 
-// Die rekursive raytracing-Methode. Am besten ab einer bestimmten Rekursionstiefe (z.B. als Parameter übergeben) abbrechen.
-// Farbwert eines Pixels durch rekursives Raytracing berechnet
-Vector3df raytrace(Ray<float, 3> ray, Scene scene, int depth) {
-  Vector3df color = {Helligkeit, Helligkeit, Helligkeit}; // Farbe des Pixels
-  if (depth != 0) {
-    Object* closestObject = scene.findClosestObject(ray);
-    if (closestObject == nullptr) {
-      return color;
+// Raytracing-Funktion
+Vector3df raytrace(const Ray<float, 3>& ray, Scene& scene, int depth) {
+    if (depth <= 0) return {GRUNDHELLIGKEIT, GRUNDHELLIGKEIT, GRUNDHELLIGKEIT};
+
+    WorldObject* closestObject = scene.findNearestObject(ray);
+    if (!closestObject) return {GRUNDHELLIGKEIT, GRUNDHELLIGKEIT, GRUNDHELLIGKEIT};
+
+    Material material = closestObject->material;
+    Vector3df normal = scene.hitContext.normal;
+    Vector3df intersection = scene.hitContext.intersection;
+
+    Vector3df color = material.color;
+    if (material.reflectivity > 0.0f) {
+        Vector3df reflection_dir = ray.direction - scale_vector(normal, 2 * (ray.direction * normal));
+        reflection_dir.normalize();
+        Ray<float, 3> reflected_ray(intersection, reflection_dir);
+        color = material.color + material.reflectivity * raytrace(reflected_ray, scene, depth - 1);
     }
 
-    Material materialObject = closestObject->material; // Material des gefundenen Objekts
-    Vector3df normal = scene.hitContext.normal; // normal vector des Schnittpunktes
-    Vector3df intersection = scene.hitContext.intersection; // Schnittpunkt des Strahls mit dem Objekt
+    return color;
+}
 
-    if (materialObject.reflectivity > 0.0) {
-      Vector3df direction = ray.direction; // Blickrichtung des Strahls
-      Vector3df reflection = direction - 2 * (direction * normal) * normal; // Blickrichtung des Strahls nach Reflektion
-      reflection.normalize(); // Blickrichtung normalisieren
-      Ray3df reflectionRay = Ray3df{intersection, reflection}; // Strahl mit Reflektion erzeugen
-      color = materialObject.color + materialObject.reflectivity * raytrace(reflectionRay, scene, depth - 1); // Farbe des Pixels ermitteln
-    }
-    color = (scene.lambertian_shading(scene.light - intersection, normal, materialObject.shininess) + 0.3f * static_cast<float>(Helligkeit)) * color;
-  }
-  return color;
-};
+int main() {
+    Screen screen(800, 800);
+    Scene scene(Vector3df{0.0f, 10.0f, -20.0f});
 
-int main(void) {
-  // Bildschirm erstellen
-  // Kamera erstellen
-  // Für jede Pixelkoordinate x,y
-  //   Sehstrahl für x,y mit Kamera erzeugen
-  //   Farbe mit raytracing-Methode bestimmen
-  //   Beim Bildschirm die Farbe für Pixel x,y, setzten
+    scene.add_object(WorldObject(Sphere3df(Vector3df{-2, 0, -15}, 2), Material({0.9f, 0.1f, 0.1f}, 0.5f, 0.5f)));
+    scene.add_object(WorldObject(Sphere3df(Vector3df{2, 0, -20}, 3), Material({0.1f, 0.1f, 0.9f}, 0.5f, 0.5f)));
 
-  // Initialisiere Welt
-  Vector3df light = {0.0, (KantenLaenge/2) - 0.5f, -TiefeMittelpunkt};
-  Scene scene = Scene(light);
+    Camera camera(screen, Vector3df{0, 0, 0}, Vector3df{0, 0, -1}, Vector3df{0, 1, 0}, 10.0f, 10.0f, 10.0f);
 
-  Vector3df centerLeft = {-1005.0, 0.0, -20.0};
-  Vector3df centerRight = {1005.0, 0.0, -20.0};
-  Vector3df centerTop = {0, 1005.0, -20.0};
-  Vector3df centerBottom = {0, -1005.0, -20.0};
-  Vector3df centerBack = {0, 0, -1025.0};
-
-  Vector3df centerSphere1 = {-2.0, -2.0, -18.0};
-  Vector3df centerSphere2 = {2.0, 2.0, -22.0};
-  Vector3df centerSphere3 = {-2.5, 2.3, -23.0};
-
-  Sphere3df sphereLeft = Sphere3df(centerLeft, RadiusGroßeKugel);
-  Sphere3df sphereRight = Sphere3df(centerRight, RadiusGroßeKugel);
-  Sphere3df sphereTop = Sphere3df(centerTop, RadiusGroßeKugel);
-  Sphere3df sphereBottom = Sphere3df(centerBottom, RadiusGroßeKugel);
-  Sphere3df sphereBack = Sphere3df(centerBack, RadiusGroßeKugel);
-
-  Sphere3df sphere1 = Sphere3df(centerSphere1, 1.5);
-  Sphere3df sphere2 = Sphere3df(centerSphere2, 1.8);
-  Sphere3df sphere3 = Sphere3df(centerSphere3, 1.0);
-
-
-  Object objectLeft = Object(sphereLeft, Material({0.9, 0.0, 0.0}, 0.4, 0.9, 0.0));
-  Object objectRight = Object(sphereRight, Material({0.0, 0.9, 0.0}, 0.4, 0.3, 0.0));
-  Object objectTop = Object(sphereTop, Material({0.1, 0.1, 0.1}, 0.4, 0.3, 0.0));
-  Object objectBottom = Object(sphereBottom, Material({0.8, 0.8, 0.8}, 0.8, 0.3, 0.0));
-  Object objectBack = Object(sphereBack, Material({0.9, 0.9, 0.9}, 0.4, 0.3, 0.0));
-
-  Object object1 = Object(sphere1, Material({0.0, 0.0, 0.9}, 0.4, 0.9, 0.0));
-  Object object2 = Object(sphere2, Material({0.0, 0.9, 0.9}, 0.4, 0.3, 0.0));
-  Object object3 = Object(sphere3, Material({0.9, 0.9, 0.0}, 0.7, 0.94, 0.0));
-
-  scene.add_object(objectLeft);
-  scene.add_object(objectRight);
-  scene.add_object(objectTop);
-  scene.add_object(objectBottom);
-  scene.add_object(objectBack);
-
-  scene.add_object(object1);
-  scene.add_object(object2);
-  scene.add_object(object3);
-
-
-  Screen screen = Screen(1000, 1000);
-
-  Vector3df eye = {0.0, 0.0, 0.0};
-  Vector3df direction = {0.0, 0.0, 1.0};
-  Vector3df up = {0.0, 1.0, 0.0};
-  Vector3df cam_view = Vector3df {0.0, 0.0, 1.0};
-  Vector3df horizontal = Vector3df {1.0, 0.0, 0.0};
-  Vector3df vertical = Vector3df {0.0, 1.0, 0.0};
-    Camera camera = Camera(screen, eye, direction, up, 10.0f, 10.0f, 15.0f, horizontal, vertical, cam_view);
-    for (int x = 0; x < screen.width; x++) {
-        for (int y = 0; y < screen.height; y++) {
+    for (int x = 0; x < screen.nx; ++x) {
+        for (int y = 0; y < screen.ny; ++y) {
             Ray<float, 3> ray = camera.generate_ray(x, y);
-            Vector3df color = raytrace(ray, scene, 3);
-            Object* closestObject = scene.findClosestObject(ray);
-            auto firstIntersection = scene.hitContext.intersection;
-            auto firstNormal = scene.hitContext.normal;
-            if(scene.findLightSources()) {
-                color = ((1 - Helligkeit) * scene.lambertian_shading(light - firstIntersection, firstNormal, closestObject->material.shininess) + Helligkeit) * color;
-            } else {
-                color = Helligkeit * color;
-            };
+            Vector3df color = raytrace(ray, scene, 5);
             screen.set_pixel(x, y, color);
         }
     }
+
     screen.write_ppm();
     return 0;
 }
