@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_compile_options(-g -Wall -Wextra -Wpedantic -Wl,--stack,16777216)
 
 include(FetchContent)
-
 # Google Test hinzufügen
 FetchContent_Declare(
         googletest
@@ -17,7 +16,33 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(main_game game.cc math.cc matrix.cc geometry.cc sdl2_renderer.cc opengl_renderer.cc sound.cc main_game.cc physics.cc sdl2_game_controller.cc timer.cc)
 
-target_link_libraries(main_game SDL2 SDL2_mixer OPENGL32 GLEW32) # MinGW
+# GLEW
+add_subdirectory(glew-2.1.0/build/cmake EXCLUDE_FROM_ALL)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/glew-2.1.0/include)
+
+#SDL2
+add_subdirectory(SDL-release-2.30.11 EXCLUDE_FROM_ALL)
+# SDL2::SDL2main may or may not be available. It is e.g. required by Windows GUI applications
+if(TARGET SDL2::SDL2main)
+    # It has an implicit dependency on SDL2 functions, so it MUST be added before SDL2::SDL2 (or SDL2::SDL2-static)
+    target_link_libraries(main_game PRIVATE SDL2::SDL2main SDL2::SDL2 OPENGL32 glew) #GLEW32 GLEW::glew
+endif()
+# Link to the actual SDL2 library. SDL2::SDL2 is the shared SDL library, SDL2::SDL2-static is the static SDL library.
+# target_link_libraries(main_game OPENGL32 GLEW32 PRIVATE SDL2::SDL2)
+if (WIN32)
+    add_custom_command(
+            TARGET main_game POST_BUILD
+            COMMAND "${CMAKE_COMMAND}" -E copy_if_different "$<TARGET_FILE:SDL2::SDL2>" "$<TARGET_FILE_DIR:main_game>"
+            VERBATIM
+    )
+    add_custom_command(
+            TARGET main_game POST_BUILD
+            COMMAND "${CMAKE_COMMAND}" -E copy_if_different "$<TARGET_FILE:glew>" "$<TARGET_FILE_DIR:main_game>"
+            VERBATIM
+    )
+endif()
+
+# target_link_libraries(main_game SDL2 SDL2_mixer OPENGL32 GLEW32) # MinGW
 # target_link_libraries(main_game SDL2 SDL2_mixer GL GLEW) # Linux
 
 enable_testing()
@@ -34,3 +59,4 @@ target_link_libraries(game_test gtest gtest_main SDL2)
 
 # cmake -G "MinGW Makefiles" -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -S .
 # mingw32-make
+# cmake -G "MinGW Makefiles" -S .. -B . -DSDL_DIRECTX=OFF
