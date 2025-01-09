@@ -475,6 +475,16 @@ static Vector2df tile_positions [] = {
                          {0.0f, 768.0f},
                          {0.0f, -768.0f} };
 
+// returns a 4 x 4 transformation matrice that translates an object in the given direction
+SquareMatrix4df create_translation(Vector2df direction) {
+  SquareMatrix4df translation = {{1.0f,         0.0f,         0.0f, 0.0f},
+                                 {0.0f,         1.0f,         0.0f, 0.0f},
+                                 {0.0f,         0.0f,         1.0f, 0.0f},
+                                 {direction[0], direction[1], 0.0f, 1.0f}
+  };
+  return translation;
+}
+
 void OpenGLRenderer::render() {
   debug(2, "render() entry...");
 
