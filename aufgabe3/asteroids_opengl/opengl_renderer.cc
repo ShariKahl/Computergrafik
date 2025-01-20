@@ -526,33 +526,33 @@ void OpenGLRenderer::render() {
   }
 
   // Zentriere die Welt, wenn ein Raumschiff existiert
-  SquareMatrix4df world_transformation_shifted = world_transformation;
-  if (game.ship_exists()) {
+SquareMatrix4df world_transformation_shifted = world_transformation;
+if (game.ship_exists()) {
     Vector2df spaceship_position = game.get_ship()->get_position();
     Vector2df screen_middle = {512.0f, 384.0f};
     Vector2df direction = screen_middle - spaceship_position;
 
     debug(2, "ship position: " + std::to_string(spaceship_position[0]) + ", " + std::to_string(spaceship_position[1]));
     world_transformation_shifted = world_transformation * create_translation(direction);
-  }
+}
 
-  // Render zusätzliche Kacheln
-  std::vector<Vector2df> tile_offsets = {
+// Render zusätzliche Kacheln
+std::vector<Vector2df> tile_offsets = {
     {0.0f, 768.0f}, {-1024.0f, 0.0f}, {0.0f, -768.0f}, {1024.0f, 0.0f},
     {-1024.0f, 768.0f}, {1024.0f, 768.0f}, {-1024.0f, -768.0f}, {1024.0f, -768.0f}
-  };
+};
 
-  debug(2, "render all views");
-  for (auto & view : views) {
+debug(2, "render all views");
+for (auto & view : views) {
     // Render die Haupt-Kachel
     view->render(world_transformation_shifted);
 
     // Render zusätzliche Kacheln
     for (const auto& offset : tile_offsets) {
-      SquareMatrix4df tile_transform = world_transformation_shifted * create_translation(offset);
-      view->render(tile_transform);
+        SquareMatrix4df tile_transform = world_transformation_shifted * create_translation(offset);
+        view->render(tile_transform);
     }
-  }
+}
 
   // Punkteanzeige und freie Schiffe rendern
   renderFreeShips(world_transformation);

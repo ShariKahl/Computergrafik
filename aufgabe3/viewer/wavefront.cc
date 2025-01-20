@@ -2,6 +2,7 @@
 
 #include <string>
 #include <iostream>
+#include <limits>
 
 WavefrontImporter::WavefrontImporter(std::istream & in) 
   : counter_clock_wise(true), input_line(0u), in(in), current_material(nullptr) { }

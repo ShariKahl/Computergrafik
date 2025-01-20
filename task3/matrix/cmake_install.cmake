@@ -1,4 +1,4 @@
-# Install script for directory: /home/shari/CLionProjects/Computergrafik/aufgabe3/matrix
+# Install script for directory: /home/shari/CLionProjects/Computergrafik/task3/matrix
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

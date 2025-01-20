@@ -6,6 +6,7 @@
 const int SCREEN_WIDTH = 1024;
 const int SCREEN_HEIGHT = (SCREEN_WIDTH * 3) / 4;
 
+// Raumschiff in der Mitte
 void displacement_fix(Body2df * body, float seconds) {
   float x = body->get_position()[0];
   float y = body->get_position()[1];
