@@ -2,6 +2,9 @@
 #include <initializer_list>
 #include "matrix.h"
 
+template <class FLOAT, size_t N>
+SquareMatrix<FLOAT, N>::SquareMatrix(): SquareMatrix({}) {}
+
 // Konstruktor: Initialisierung über eine Liste von Vector<FLOAT, N>-Objekten,
 // die als Spalten (column order) in der internen 'matrix'-Struktur gespeichert werden.
 template <class FLOAT, size_t N>

@@ -1,4 +1,0 @@
-/home/shari/CLionProjects/Computergrafik/aufgabe3/viewer/CMakeFiles/viewer.dir
-/home/shari/CLionProjects/Computergrafik/aufgabe3/viewer/CMakeFiles/wavefront_test.dir
-/home/shari/CLionProjects/Computergrafik/aufgabe3/viewer/CMakeFiles/edit_cache.dir
-/home/shari/CLionProjects/Computergrafik/aufgabe3/viewer/CMakeFiles/rebuild_cache.dir
