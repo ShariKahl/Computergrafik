@@ -1,0 +1,5 @@
+/home/shari/CLionProjects/Computergrafik/aufgabe2/CMakeFiles/math_test.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe2/CMakeFiles/geometry_test.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe2/CMakeFiles/raytracer.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe2/CMakeFiles/edit_cache.dir
+/home/shari/CLionProjects/Computergrafik/aufgabe2/CMakeFiles/rebuild_cache.dir
