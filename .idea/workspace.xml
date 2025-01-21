@@ -7,6 +7,7 @@
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -28,7 +29,12 @@
   <component name="ChangeListManager">
     <list default="true" id="017546b3-7fa9-48e2-bef4-6396dd12e16f" name="Changes" comment="Updated Task 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aufgabe3/matrix/matrix.tcc" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe3/matrix/matrix.tcc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/asteroid.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/asteroid.mtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/debris.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/debris.mtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/saucer.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/saucer.mtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/spaceship.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/spaceship.mtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/spaceship_boost.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/spaceship_boost.mtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/torpedo.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/aufgabe3/asteroids_3d_models/torpedo.mtl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +172,7 @@
       <workItem from="1736460546126" duration="265000" />
       <workItem from="1736884166965" duration="489000" />
       <workItem from="1737474907086" duration="641000" />
+      <workItem from="1737480613356" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="01_math done">
       <option name="closed" value="true" />

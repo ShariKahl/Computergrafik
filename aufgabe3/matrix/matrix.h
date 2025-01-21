@@ -2,6 +2,7 @@
 #define MATRIX_H
 
 #include "math.h"
+#include <cmath>
 
 // a square matrice implementation
 template <class FLOAT, size_t N>
@@ -9,6 +10,7 @@ class SquareMatrix {
   static_assert(N > 0u);
   std::array< Vector<FLOAT,N>, N> matrix;  // values are stored in column (a vector) order
 public:
+  SquareMatrix(); // Standardkonstruktor
   SquareMatrix(std::initializer_list< Vector<FLOAT, N > > values);
     
   // returns reference to the i-th column vector
