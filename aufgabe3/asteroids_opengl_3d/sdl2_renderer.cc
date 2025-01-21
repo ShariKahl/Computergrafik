@@ -231,7 +231,7 @@ bool SDL2Renderer::init() {
 
 void SDL2Renderer::render() {
   std::cout << "render start..." << std::endl; 
-  SDL_SetRenderDrawColor( renderer, 0xAB, 0xAB, 0xAB, 0xFF );
+  SDL_SetRenderDrawColor( renderer, 0x00, 0x00, 0x00, 0xFF );
   SDL_RenderClear( renderer );
   SDL_SetRenderDrawColor( renderer, 0xFF, 0xFF, 0xFF, 0xFF );
   

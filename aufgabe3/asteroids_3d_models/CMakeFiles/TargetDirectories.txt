@@ -1,4 +1,0 @@
-/home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_3d_models/CMakeFiles/viewer.dir
-/home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_3d_models/CMakeFiles/wavefront_test.dir
-/home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_3d_models/CMakeFiles/edit_cache.dir
-/home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_3d_models/CMakeFiles/rebuild_cache.dir
