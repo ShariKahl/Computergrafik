@@ -671,11 +671,11 @@ bool OpenGLRenderer::init() {
 
             SDL_GL_SetSwapInterval(1);
 
-            // Aufgabe_3 set graphics
+            // Aufgabe_3
             load_objects({
                 {"spaceship.obj"}, {"saucer.obj"},
                 {"asteroid.obj"}, {"debris.obj"},
-                {"torpedo.obj"}, {"spaceship_boost"}
+                {"torpedo.obj"}, {"spaceship_boost.obj"}
             });
 
             create_shader_programs();
