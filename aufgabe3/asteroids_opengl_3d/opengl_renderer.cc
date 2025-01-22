@@ -342,21 +342,21 @@ void OpenGLRenderer::create(Spaceship *ship, std::vector<std::unique_ptr<TypedBo
 
     // ship
     views.push_back(std::make_unique<TypedBodyView>(ship, vbos3d[0], shaderProgram3d, vertice_3d_data[0].size(), 1.0f,
-                                                    GL_TRIANGLES, true, // TODO changed from GL_LINE_LOOP
+                                                    GL_TRIANGLES, true,
                                                     [ship]() -> bool {
                                                         return !ship->is_in_hyperspace();
                                                     }) // only show ship if outside hyperspace
     );
     // flame
     views.push_back(std::make_unique<TypedBodyView>(ship, vbos3d[5], shaderProgram3d, vertice_3d_data[5].size(), 1.0f,
-                                                    GL_TRIANGLES, true, // TODO changed from GL_LINE_LOOP
+                                                    GL_TRIANGLES, true,
                                                     [ship]() -> bool {
                                                         return !ship->is_in_hyperspace() && ship->is_accelerating();
                                                     }) // only show flame if accelerating
     );
 
     debug(4, "create(Spaceship *) exit.");
-} // TODO modify for 3d version or check and change before?
+}
 
 void OpenGLRenderer::create(Saucer *saucer, std::vector<std::unique_ptr<TypedBodyView> > &views) {
     debug(4, "create(Saucer *) entry...");
@@ -366,15 +366,15 @@ void OpenGLRenderer::create(Saucer *saucer, std::vector<std::unique_ptr<TypedBod
     }
     views.push_back(std::make_unique<TypedBodyView>(saucer, vbos3d[1], shaderProgram3d, vertice_3d_data[1].size(), scale, GL_TRIANGLES, true));
     debug(4, "create(Saucer *) exit.");
-} // TODO modify for 3d version or check and change before?
+}
 
 
 void OpenGLRenderer::create(Torpedo *torpedo, std::vector<std::unique_ptr<TypedBodyView> > &views) {
     debug(4, "create(Torpedo *) entry...");
     views.push_back(std::make_unique<TypedBodyView>(torpedo, vbos3d[4], shaderProgram3d, vertice_3d_data[4].size(), 1.0f,
-                                                    GL_TRIANGLES, true /*TODO changed from nothing*/));
+                                                    GL_TRIANGLES, true ));
     debug(4, "create(Torpedo *) exit.");
-} // TODO modify for 3d version or check and change before?
+}
 
 void OpenGLRenderer::create(Asteroid *asteroid, std::vector<std::unique_ptr<TypedBodyView> > &views) {
     debug(4, "create(Asteroid *) entry...");
@@ -386,12 +386,12 @@ void OpenGLRenderer::create(Asteroid *asteroid, std::vector<std::unique_ptr<Type
                                                     vertice_3d_data[2].size(),
                                                     scale, GL_TRIANGLES, true));
     debug(4, "create(Asteroid *) exit.");
-} // TODO modify for 3d version or check and change before?
+}
 
 void OpenGLRenderer::create(SpaceshipDebris *debris, std::vector<std::unique_ptr<TypedBodyView> > &views) {
     debug(4, "create(SpaceshipDebris *) entry...");
     views.push_back(std::make_unique<TypedBodyView>(debris, vbos[10], shaderProgram, vertice_data[10]->size(), 0.1f,
-                                                    GL_POINTS, false, // TODO changed from GL_POINTS
+                                                    GL_POINTS, false,
                                                     []() -> bool { return true; },
                                                     [debris](TypedBodyView *view) -> void {
                                                         view->set_scale(
@@ -399,31 +399,31 @@ void OpenGLRenderer::create(SpaceshipDebris *debris, std::vector<std::unique_ptr
                                                                     get_time_to_delete()));
                                                     }));
     debug(4, "create(SpaceshipDebris *) exit.");
-} // TODO modify for 3d version or check and change before?
+}
 
 void OpenGLRenderer::create(Debris *debris, std::vector<std::unique_ptr<TypedBodyView> > &views) {
     debug(4, "create(Debris *) entry...");
     views.push_back(std::make_unique<TypedBodyView>(debris, vbos[3], shaderProgram3d, vertice_3d_data[3].size(), 0.1f,
-                                                    GL_TRIANGLES, true, // TODO changed from GL_POINTS
+                                                    GL_TRIANGLES, true,
                                                     []() -> bool { return true; },
                                                     [debris](TypedBodyView *view) -> void {
                                                         view->set_scale(
                                                             Debris::TIME_TO_DELETE - debris->get_time_to_delete());
                                                     }));
     debug(4, "create(Debris *) exit.");
-} // TODO modify for 3d version or check and change before?
+}
 
 void OpenGLRenderer::createSpaceShipView() {
     spaceship_view = std::make_unique<OpenGLView>(vbos[0], shaderProgram, vertice_data[0]->size(),
-                                                  GL_LINE_LOOP, false /* TODO changed from GL_LINE_LOOP */);
-} // TODO modify for 3d version or check and change before?
+                                                  GL_LINE_LOOP, false );
+}
 
 void OpenGLRenderer::createDigitViews() {
     for (size_t i = 0; i < 10; i++) {
         digit_views[i] = std::make_unique<OpenGLView>(vbos[11 + i], shaderProgram, vertice_data[11 + i]->size(),
                                                       GL_LINE_STRIP, false);
     }
-} // TODO modify for 3d version or check and change before?
+}
 
 
 void OpenGLRenderer::renderFreeShips(const SquareMatrix4df &matrice) const
@@ -449,7 +449,7 @@ void OpenGLRenderer::renderFreeShips(const SquareMatrix4df &matrice) const
         spaceship_view->render(render_matrice);
         position[0] += 20.0;
     }
-} // TODO modify for 3d version or check and change before?
+}
 
 void OpenGLRenderer::renderScore(const SquareMatrix4df &matrice) const
 {
@@ -611,7 +611,7 @@ std::vector<float> create_vertices(WavefrontImporter &wi) {
     return vertices;
 }
 
-// Aufgabe_3 alt
+
 /*
 std::vector<Vector2df> get_points(const std::vector<float> &vertices) {
     std::vector<Vector2df> points;
