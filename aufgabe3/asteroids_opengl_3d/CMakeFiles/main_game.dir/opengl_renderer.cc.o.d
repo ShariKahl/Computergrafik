@@ -271,33 +271,18 @@ CMakeFiles/main_game.dir/opengl_renderer.cc.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/matrix.h \
- /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/math.h \
- /usr/include/c++/13/array \
- /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/physics.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/functional \
- /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/bits/stl_tempbuf.h /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/array \
+ /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
  /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/ext/concurrence.h \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/bits/atomic_base.h \
@@ -320,7 +305,21 @@ CMakeFiles/main_game.dir/opengl_renderer.cc.o: \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/functional \
+ /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/matrix.h \
+ /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/math.h \
+ /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/physics.h \
  /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/timer.h \
  /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/geometry.h \
  /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/game.h \
@@ -332,5 +331,11 @@ CMakeFiles/main_game.dir/opengl_renderer.cc.o: \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
  /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/renderer.h \
  /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/debug.h \
- /usr/include/c++/13/cassert /usr/include/assert.h \
- /usr/include/c++/13/span
+ /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/wavefront.h \
+ /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/aarch64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/cassert \
+ /usr/include/assert.h /usr/include/c++/13/span

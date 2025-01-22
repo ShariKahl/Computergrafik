@@ -329,4 +329,5 @@ CMakeFiles/game_test.dir/game.cc.o: \
  /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/geometry.h \
  /home/shari/CLionProjects/Computergrafik/aufgabe3/asteroids_opengl_3d/debug.h \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/ranges_algo.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h /usr/include/GL/glew.h \
+ /usr/include/GL/glu.h /usr/include/GL/gl.h
